@@ -5,8 +5,8 @@ const projects = [
     stack: ["Python", "PyTorch", "ResNet-18", "CBAM", "Streamlit"], 
     badge: "AI / ML", 
     highlight: "99.24% Accuracy",
-    demoUrl: "https://your-brain-tumor-app.streamlit.app",
-    githubUrl: "https://github.com/your-username/brain-tumor-classification"
+    demoUrl: "https://brain-tumor-classification-app.streamlit.app/",
+    githubUrl: "https://github.com/dharamveerkz/Brain-Tumor-Classification-App"
   },
   { 
     title: "Job Recommendation Engine", 
