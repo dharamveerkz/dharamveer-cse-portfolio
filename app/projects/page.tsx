@@ -26,12 +26,12 @@ const projects = [
     githubUrl: "https://github.com/your-username/vidyalaya-erp"
   },
   { 
-    title: "Business Management SaaS", 
-    desc: "Multi-tenant dashboard for inventory, invoicing, employee records, and subscription billing.", 
-    stack: ["Next.js 14", "Tailwind", "PostgreSQL", "Prisma", "Stripe"], 
+    title: "My Photography Hub", 
+    desc: "A personal photography portfolio with integrated micro-learning.", 
+    stack: ["React", "Tailwind", "TypeScript", "terser", "sharp"], 
     badge: "SaaS",
-    demoUrl: "https://your-saas-dashboard-url.com",
-    githubUrl: "https://github.com/your-username/business-saas"
+    demoUrl: "https://dharamveer-photography-hub.vercel.app/",
+    githubUrl: "https://github.com/dharamveerkz/my-photography-gallery"
   },
   { 
     title: "internwin- Educational Platform", 
