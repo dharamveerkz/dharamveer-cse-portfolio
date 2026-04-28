@@ -13,8 +13,8 @@ const projects = [
     desc: "Analyzes resume text using TF-IDF & semantic embeddings to match candidates with optimal career paths.", 
     stack: ["Python", "NLP", "TensorFlow", "Flask", "Scikit-learn"], 
     badge: "AI / ML",
-    demoUrl: "https://your-job-recommender-url.com",
-    githubUrl: "https://github.com/your-username/job-recommendation"
+    demoUrl: "https://smartjobrecommendation.streamlit.app/",
+    githubUrl: "https://github.com/dharamveerkz/SmartJob_recommendation"
   },
   { 
     title: "Vidyalaya ERP System", 
