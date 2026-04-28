@@ -39,8 +39,8 @@ const projects = [
     stack: ["Next.js 14", "Socket.IO", "Prisma", "PostgreSQL", "Framer Motion"], 
     badge: "Full-Stack",
     highlight: "Live Sync Across Devices",
-    demoUrl: "https://your-taskboard-demo.vercel.app",
-    githubUrl: "https://github.com/your-username/collab-taskboard"
+    demoUrl: "https://internwin-platform-three.vercel.app/",
+    githubUrl: "https://github.com/dharamveerkz/internwin-platform"
   },
 ];
 
