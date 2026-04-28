@@ -5,14 +5,16 @@ const projects = [
     stack: ["Python", "PyTorch", "ResNet-18", "CBAM", "Streamlit"], 
     badge: "AI / ML", 
     highlight: "99.24% Accuracy",
-    demoUrl: "https://your-streamlit-app-url.com" // 👈 ADD YOUR LIVE URL HERE
+    demoUrl: "https://your-brain-tumor-app.streamlit.app",
+    githubUrl: "https://github.com/your-username/brain-tumor-classification"
   },
   { 
     title: "Job Recommendation Engine", 
     desc: "Analyzes resume text using TF-IDF & semantic embeddings to match candidates with optimal career paths.", 
     stack: ["Python", "NLP", "TensorFlow", "Flask", "Scikit-learn"], 
     badge: "AI / ML",
-    demoUrl: "https://your-job-recommender-url.com" // 👈 ADD URL HERE
+    demoUrl: "https://your-job-recommender-url.com",
+    githubUrl: "https://github.com/your-username/job-recommendation"
   },
   { 
     title: "Vidyalaya ERP System", 
@@ -20,14 +22,25 @@ const projects = [
     stack: ["React 18", "Node.js", "MySQL", "JWT", "RBAC"], 
     badge: "Full-Stack", 
     highlight: "27-File Production System",
-    demoUrl: "https://vidyalaya-erp-demo.vercel.app" // 👈 ADD URL HERE
+    demoUrl: "https://vidyalaya-erp-demo.vercel.app",
+    githubUrl: "https://github.com/your-username/vidyalaya-erp"
   },
   { 
     title: "Business Management SaaS", 
     desc: "Multi-tenant dashboard for inventory, invoicing, employee records, and subscription billing.", 
     stack: ["Next.js 14", "Tailwind", "PostgreSQL", "Prisma", "Stripe"], 
     badge: "SaaS",
-    demoUrl: "https://your-saas-dashboard-url.com" // 👈 ADD URL HERE
+    demoUrl: "https://your-saas-dashboard-url.com",
+    githubUrl: "https://github.com/your-username/business-saas"
+  },
+  { 
+    title: "Real-Time Collaborative Task Board", 
+    desc: "Kanban-style project management tool with drag-and-drop, live user presence, and instant state sync via WebSockets.", 
+    stack: ["Next.js 14", "Socket.IO", "Prisma", "PostgreSQL", "Framer Motion"], 
+    badge: "Full-Stack",
+    highlight: "Live Sync Across Devices",
+    demoUrl: "https://your-taskboard-demo.vercel.app",
+    githubUrl: "https://github.com/your-username/collab-taskboard"
   },
 ];
 
@@ -57,13 +70,20 @@ export default function Projects() {
                   Live Demo ↗
                 </a>
               ) : (
-                <span className="px-4 py-2 bg-slate-100 text-slate-400 text-sm font-semibold rounded cursor-default">
-                  Demo Unavailable
-                </span>
+                <span className="px-4 py-2 bg-slate-100 text-slate-400 text-sm font-semibold rounded cursor-default">Demo Unavailable</span>
               )}
-              <button className="px-4 py-2 bg-white border border-slate-200 text-sm font-semibold rounded hover:border-blue-300 hover:text-blue-600 transition">
-                GitHub
-              </button>
+              {p.githubUrl ? (
+                <a
+                  href={p.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-white border border-slate-200 text-sm font-semibold rounded hover:border-blue-300 hover:text-blue-600 transition inline-block"
+                >
+                  GitHub ↗
+                </a>
+              ) : (
+                <span className="px-4 py-2 bg-slate-100 text-slate-400 text-sm font-semibold rounded cursor-default">Code Private</span>
+              )}
             </div>
           </div>
         ))}
