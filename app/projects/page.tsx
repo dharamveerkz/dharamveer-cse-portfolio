@@ -34,10 +34,10 @@ const projects = [
     githubUrl: "https://github.com/your-username/business-saas"
   },
   { 
-    title: "Real-Time Collaborative Task Board", 
-    desc: "Kanban-style project management tool with drag-and-drop, live user presence, and instant state sync via WebSockets.", 
-    stack: ["Next.js 14", "Socket.IO", "Prisma", "PostgreSQL", "Framer Motion"], 
-    badge: "Full-Stack",
+    title: "internwin- Educational Platform", 
+    desc: "High-performance internship platform with verified certificates & ABC Bank credits.", 
+    stack: ["Next.js 16", "Tailwind", "mongodb", "Framer Motion"], 
+    badge: "Frontend",
     highlight: "Live Sync Across Devices",
     demoUrl: "https://internwin-platform-three.vercel.app/",
     githubUrl: "https://github.com/dharamveerkz/internwin-platform"
