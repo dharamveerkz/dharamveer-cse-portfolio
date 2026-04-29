@@ -1,6 +1,5 @@
+// app/contact/page.tsx
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaTelegram } from 'react-icons/fa';
-import { SiLeetcode, SiDevdotto, SiDiscord, SiInstagram } from 'react-icons/si';
 
 export default function Contact() {
   const contactDetails = {
@@ -12,18 +11,18 @@ export default function Contact() {
   };
 
   const techLinks = [
-    { name: "GitHub", href: "https://github.com/dharamveerkr", icon: <FaGithub />, desc: "Code repositories" },
-    { name: "LeetCode", href: "https://leetcode.com/dharamveerkr", icon: <SiLeetcode />, desc: "Problem solving" },
-    { name: "Dev.to", href: "https://dev.to/dharamveerkr", icon: <SiDevdotto />, desc: "Technical blogs" },
-    { name: "Discord", href: "https://discord.gg/8UNmN7eD", icon: <SiDiscord />, desc: "Community chats" },
+    { name: "GitHub", href: "https://github.com/dharamveerkr", icon: "⌨️", desc: "Code repositories" },
+    { name: "LeetCode", href: "https://leetcode.com/dharamveerkr", icon: "🧠", desc: "Problem solving" },
+    { name: "Dev.to", href: "https://dev.to/dharamveerkr", icon: "📝", desc: "Technical blogs" },
+    { name: "Discord", href: "https://discord.gg/8UNmN7eD", icon: "💬", desc: "Community chats" },
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", href: "https://linkedin.com/in/dharamveerkr", icon: <FaLinkedin /> },
-    { name: "Twitter", href: "https://twitter.com/imdharamvrr", icon: <FaTwitter /> },
-    { name: "Instagram", href: "https://instagram.com/imdharamvrr", icon: <SiInstagram /> },
-    { name: "Facebook", href: "https://facebook.com/imdharamvrr", icon: <FaFacebook /> },
-    { name: "Telegram", href: "https://t.me/imdharamvrr", icon: <FaTelegram /> },
+    { name: "LinkedIn", href: "https://linkedin.com/in/dharamveerkr", icon: "💼" },
+    { name: "Twitter", href: "https://twitter.com/imdharamvrr", icon: "🐦" },
+    { name: "Instagram", href: "https://instagram.com/imdharamvrr", icon: "📸" },
+    { name: "Facebook", href: "https://facebook.com/imdharamvrr", icon: "📘" },
+    { name: "Telegram", href: "https://t.me/imdharamvrr", icon: "✈️" },
   ];
 
   return (
@@ -31,8 +30,12 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-xs font-bold text-blue-200 uppercase tracking-widest mb-2">/ Contact</p>
-          <h2 className="font-playfair text-4xl font-black mb-4">Let's Connect</h2>
+          <p className="text-xs font-bold text-blue-200 uppercase tracking-widest mb-2">
+            / Contact
+          </p>
+          <h2 className="font-playfair text-4xl font-black mb-4">
+            Let's Connect
+          </h2>
           <p className="text-blue-100 max-w-xl mx-auto">
             Open to opportunities, collaborations, and tech discussions. Let's build something amazing together!
           </p>
@@ -44,18 +47,24 @@ export default function Contact() {
             <p className="text-xs text-blue-200 uppercase mb-1">Name</p>
             <p className="font-semibold">{contactDetails.name}</p>
           </div>
-          <div className="p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm">
-            <p className="text-xs text-blue-200 uppercase mb-1">Location</p>
+          <div className="p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm">            <p className="text-xs text-blue-200 uppercase mb-1">Location</p>
             <p className="font-semibold">{contactDetails.location}</p>
-          </div>          <div className="p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm">
+          </div>
+          <div className="p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm">
             <p className="text-xs text-blue-200 uppercase mb-1">Phone</p>
-            <a href={`tel:${contactDetails.phone}`} className="font-semibold hover:text-blue-200">
+            <a
+              href={`tel:${contactDetails.phone}`}
+              className="font-semibold hover:text-blue-200 transition"
+            >
               {contactDetails.phone}
             </a>
           </div>
           <div className="p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm">
             <p className="text-xs text-blue-200 uppercase mb-1">Email</p>
-            <a href={`mailto:${contactDetails.email}`} className="font-semibold hover:text-blue-200 break-all">
+            <a
+              href={`mailto:${contactDetails.email}`}
+              className="font-semibold hover:text-blue-200 break-all transition"
+            >
               {contactDetails.email}
             </a>
           </div>
@@ -67,7 +76,7 @@ export default function Contact() {
             href={`mailto:${contactDetails.email}`}
             className="flex items-center gap-2 px-6 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition shadow-lg"
           >
-            <FaTwitter className="w-5 h-5" /> Send Email
+            <span className="text-lg">✉️</span> Send Email
           </a>
           <a
             href={contactDetails.whatsapp}
@@ -75,7 +84,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition shadow-lg"
           >
-            <SiTelegram className="w-5 h-5" /> WhatsApp
+            <span className="text-lg">💬</span> WhatsApp
           </a>
         </div>
 
@@ -83,20 +92,24 @@ export default function Contact() {
           {/* Technology Links */}
           <div>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-              <FaGithub className="w-6 h-6" /> Technology Profiles
+              <span className="text-2xl">💻</span> Technology Profiles
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {techLinks.map((link, i) => (
-                <a
-                  key={i}
+                <a                  key={i}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm hover:bg-white/20 transition group"
                 >
-                  <span className="text-2xl text-white group-hover:text-blue-200 transition">{link.icon}</span>
+                  <span className="text-2xl group-hover:scale-110 transition-transform">
+                    {link.icon}
+                  </span>
                   <div>
-                    <p className="font-semibold group-hover:text-blue-200 transition">{link.name}</p>                    <p className="text-xs text-blue-200">{link.desc}</p>
+                    <p className="font-semibold group-hover:text-blue-200 transition">
+                      {link.name}
+                    </p>
+                    <p className="text-xs text-blue-200">{link.desc}</p>
                   </div>
                 </a>
               ))}
@@ -106,7 +119,7 @@ export default function Contact() {
           {/* Social Links */}
           <div>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-              <FaLinkedin className="w-6 h-6" /> Social Media
+              <span className="text-2xl">🌐</span> Social Media
             </h3>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map((link, i) => (
@@ -118,8 +131,12 @@ export default function Contact() {
                   className="flex items-center gap-2 px-4 py-3 bg-white/10 border border-white/20 rounded-lg backdrop-blur-sm hover:bg-white/20 transition group"
                   aria-label={link.name}
                 >
-                  <span className="text-xl text-white group-hover:text-blue-200 transition">{link.icon}</span>
-                  <span className="font-medium group-hover:text-blue-200 transition">{link.name}</span>
+                  <span className="text-xl group-hover:scale-110 transition-transform">
+                    {link.icon}
+                  </span>
+                  <span className="font-medium group-hover:text-blue-200 transition">
+                    {link.name}
+                  </span>
                 </a>
               ))}
             </div>
@@ -128,8 +145,7 @@ export default function Contact() {
 
         {/* Footer Note */}
         <div className="mt-16 text-center text-sm text-blue-200/80">
-          <p>📍 Based in Patna, Bihar • Available for remote work worldwide</p>
-          <p className="mt-2">Response time: Usually within 24 hours</p>
+          <p>📍 Based in Patna, Bihar • Available for remote work worldwide</p>          <p className="mt-2">Response time: Usually within 24 hours</p>
         </div>
       </div>
     </section>
