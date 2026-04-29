@@ -12,8 +12,8 @@ const roles = [
     role: "AI/ML & Core CS Certification Holder",
     org: "NPTEL & YBI Foundation",
     bullets: [
-      "Artificial Intelligence and Machine Learning (NPTEL - IIT Madras)",
-      "Fundamentals of Machine Learning with Python (NPTEL - IIT Madras)",
+      "Artificial Intelligence and Machine Learning (Ybi Foundation)",
+      "Machine Learning with Python (Ybi Foundation)",
       "Operating System Fundamentals (NPTEL - IIT Kharagpur)",
       "Problem Solving through Programming in C (NPTEL - IIT Kharagpur)",
       "AI & Machine Learning Course (YBI Foundation)"
