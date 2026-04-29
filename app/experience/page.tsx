@@ -1,7 +1,60 @@
 const roles = [
-  { role: "T&P Cell Core Member & Social Media Lead", org: "Bakhtiyarpur College of Engineering, Patna", date: "2023 – 2024", bullets: ["Managed all official college social media during placement season", "Produced placement highlights, recruiter spotlights, alumni success stories", "Executed data-driven content calendars with trend-based posting"] },
-  { role: "Alumni Association — Management Team & Content Strategist", org: "Bakhtiyarpur College of Engineering, Patna", date: "2023 – 2024", bullets: ["Managed alumni engagement, networking events, mentorship promotions", "Designed monthly alumni spotlight series — boosted interaction by 40%", "Built reusable content templates for announcements & reunions"] },
-  { role: "Media Team Lead", org: "NGO Aashraya", date: "2023 – Present", bullets: ["Led media team for social-impact campaigns: plantation, blood donation, awareness events", "Managed Instagram with content calendar, reels, stories, and community engagement", "Designed all event branding: banners, volunteer IDs, digital creatives"] },
+  {
+    role: "Technical Projects Developer (Team of 4)",
+    org: "College Academic Projects",
+    bullets: [
+      "Brain Tumor Classification: Built CNN model using PyTorch achieving 99.24% accuracy on MRI scans",
+      "Job Recommendation System: Developed NLP-based matching engine using Python & scikit-learn",
+      "E-Commerce Web Platform: Built full-stack app with Next.js, TypeScript, Prisma & PostgreSQL"
+    ]
+  },
+  {
+    role: "AI/ML & Core CS Certification Holder",
+    org: "NPTEL & YBI Foundation",
+    bullets: [
+      "Artificial Intelligence and Machine Learning (NPTEL - IIT Madras)",
+      "Fundamentals of Machine Learning with Python (NPTEL - IIT Madras)",
+      "Operating System Fundamentals (NPTEL - IIT Kharagpur)",
+      "Problem Solving through Programming in C (NPTEL - IIT Kharagpur)",
+      "AI & Machine Learning Course (YBI Foundation)"
+    ]
+  },
+  {
+    role: "Open Source Contributor & Hackathon Participant",
+    org: "Technical Community & College Events",
+    bullets: [
+      "Contributed to 4+ open-source repositories during Hacktoberfest 2023",
+      "Participated in college technical fest coding competitions & debugging challenges",
+      "Active problem solver on LeetCode, GeeksforGeeks, and HackerRank"
+    ]
+  },
+  {
+    role: "T&P Cell Core Member & Social Media Lead",
+    org: "Bakhtiyarpur College of Engineering, Patna",
+    bullets: [
+      "Managed all official college social media during placement season",
+      "Produced placement highlights, recruiter spotlights, alumni success stories",
+      "Executed data-driven content calendars with trend-based posting"
+    ]
+  },
+  {
+    role: "Alumni Association — Management Team & Content Strategist",
+    org: "Bakhtiyarpur College of Engineering, Patna",
+    bullets: [
+      "Managed alumni engagement, networking events, mentorship promotions",
+      "Designed monthly alumni spotlight series — boosted interaction by 40%",
+      "Built reusable content templates for announcements & reunions"
+    ]
+  },
+  {
+    role: "Media Team Lead",
+    org: "NGO Aashraya",
+    bullets: [
+      "Led media team for social-impact campaigns: plantation, blood donation, awareness events",
+      "Managed Instagram with content calendar, reels, stories, and community engagement",
+      "Designed all event branding: banners, volunteer IDs, digital creatives"
+    ]
+  }
 ];
 
 export default function Experience() {
