@@ -17,11 +17,11 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", href: "https://linkedin.com/in/dharamveerkz", icon: "💼" },
-    { name: "Twitter", href: "https://twitter.com/dharamveerkz", icon: "🐦" },
-    { name: "Instagram", href: "https://instagram.com/dharamveerkz", icon: "📸" },
-    { name: "Facebook", href: "https://facebook.com/dharamveerkz", icon: "📘" },
-    { name: "Telegram", href: "https://t.me/dharamveerkz", icon: "✈️" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/dharamveerkr", icon: "💼" },
+    { name: "Twitter", href: "https://twitter.com/imdharamvrr", icon: "🐦" },
+    { name: "Instagram", href: "https://instagram.com/imdharamvrr", icon: "📸" },
+    { name: "Facebook", href: "https://facebook.com/imdharamvrr", icon: "📘" },
+    { name: "Telegram", href: "https://t.me/imdharamvrr", icon: "✈️" },
   ];
 
   return (
