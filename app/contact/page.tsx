@@ -10,10 +10,10 @@ export default function Contact() {
   };
 
   const techLinks = [
-    { name: "GitHub", href: "https://github.com/dharamveerkz", icon: "⌨️", desc: "Code repositories" },
-    { name: "LeetCode", href: "https://leetcode.com/dharamveerkz", icon: "🧠", desc: "Problem solving" },
-    { name: "Dev.to", href: "https://dev.to/dharamveerkz", icon: "📝", desc: "Technical blogs" },
-    { name: "Discord", href: "https://discord.com", icon: "💬", desc: "Community chats" },
+    { name: "GitHub", href: "https://github.com/dharamveerkr", icon: "⌨️", desc: "Code repositories" },
+    { name: "LeetCode", href: "https://leetcode.com/dharamveerkr", icon: "🧠", desc: "Problem solving" },
+    { name: "Dev.to", href: "https://dev.to/dharamveerkr", icon: "📝", desc: "Technical blogs" },
+    { name: "Discord", href: "https://discord.gg/8UNmN7eD", icon: "💬", desc: "Community chats" },
   ];
 
   const socialLinks = [
