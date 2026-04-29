@@ -1,4 +1,6 @@
+// app/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const socialLinks = [
@@ -41,69 +43,103 @@ export default function Home() {
   ];
 
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-blue-100 px-6">
-      <div className="max-w-3xl text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-blue-700 text-xs font-semibold tracking-wide uppercase">
-          <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span> Open to Opportunities
-        </div>
-        
-        <h1 className="font-playfair text-5xl md:text-7xl font-black tracking-tight">          Dharamveer <span className="text-blue-600">Kumar</span>
-        </h1>
-        
-        <p className="text-lg md:text-xl text-slate-600 font-light">
-          Software Engineer & Full-Stack Developer
-        </p>
-        
-        <p className="text-slate-600 max-w-xl mx-auto leading-relaxed">
-          Building scalable web applications, intelligent AI solutions, and data-driven systems. Specializing in real-world projects that bridge engineering rigor with product impact.
-        </p>
+    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-blue-100 px-6 py-12">
+      <div className="max-w-6xl w-full">
+        {/* Responsive Layout: Column on mobile, Row on desktop */}
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                    {/* Content Section (Left on desktop, top on mobile) */}
+          <div className="flex-1 text-center lg:text-left space-y-6 order-2 lg:order-1">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-blue-700 text-xs font-semibold tracking-wide uppercase mx-auto lg:mx-0">
+              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span> Open to Opportunities
+            </div>
 
-        {/* Quick Connect Section */}
-        <div className="pt-2">
-          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Quick Connect</p>
-          <div className="flex justify-center gap-3">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center justify-center w-11 h-11 rounded-xl text-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 ${social.color}`}
-                aria-label={social.name}
+            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
+              Dharamveer <span className="text-blue-600">Kumar</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-slate-600 font-light">
+              Software Engineer & Full-Stack Developer
+            </p>
+
+            <p className="text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Building scalable web applications, intelligent AI solutions, and data-driven systems. Specializing in real-world projects that bridge engineering rigor with product impact.
+            </p>
+
+            {/* Quick Connect Section */}
+            <div className="pt-2">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Quick Connect</p>
+              <div className="flex justify-center lg:justify-start gap-3">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center w-11 h-11 rounded-xl text-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 ${social.color}`}
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+              <Link 
+                href="/projects" 
+                className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200"
               >
-                {social.icon}
-              </a>
-            ))}
+                View Projects →
+              </Link>
+              <Link 
+                href="/contact" 
+                className="px-6 py-3 bg-white border border-slate-200 text-slate-800 font-semibold rounded-lg hover:border-blue-300 hover:text-blue-600 transition"
+              >
+                Contact Me              </Link>
+            </div>
+
+            {/* Quick Navigation Boxes */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4">
+              {quickLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-lg text-slate-700 text-sm font-medium hover:border-blue-300 hover:text-blue-600 hover:shadow-md transition-all duration-200"
+                >
+                  <span>{link.icon}</span>
+                  <span>{link.name}</span>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
-          <Link 
-            href="/projects" 
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200"
-          >
-            View Projects →
-          </Link>
-          <Link 
-            href="/contact" 
-            className="px-6 py-3 bg-white border border-slate-200 text-slate-800 font-semibold rounded-lg hover:border-blue-300 hover:text-blue-600 transition"
-          >
-            Contact Me
-          </Link>
-        </div>
+          {/* Profile Image Section (Right on desktop, bottom on mobile) */}
+          <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center">
+            <div className="relative group">
+              {/* Decorative ring */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+              
+              {/* Profile Image */}
+              <div className="relative bg-white p-1.5 rounded-2xl shadow-xl">
+                <Image
+                  src="/me.jpg"
+                  alt="Dharamveer Kumar - Profile"
+                  width={280}
+                  height={280}
+                  priority
+                  className="rounded-xl w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-cover object-center transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </div>
 
-        {/* Quick Navigation Boxes */}
-        <div className="flex flex-wrap justify-center gap-3 pt-4">
-          {quickLinks.map((link) => (
-            <Link              key={link.name}
-              href={link.href}
-              className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-lg text-slate-700 text-sm font-medium hover:border-blue-300 hover:text-blue-600 hover:shadow-md transition-all duration-200"
-            >
-              <span>{link.icon}</span>
-              <span>{link.name}</span>
-            </Link>
-          ))}
+              {/* Status badge */}
+              <div className="absolute -bottom-2 -right-2 bg-green-500 border-4 border-white rounded-full p-1.5 shadow-lg">
+                <span className="sr-only">Available for work</span>
+                <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
