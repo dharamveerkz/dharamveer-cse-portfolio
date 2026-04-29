@@ -1,12 +1,13 @@
-const achievements = [
-  { icon: "📱", text: "Managed 5+ official college social media pages simultaneously" },
-  { icon: "📈", text: "Grew Instagram organic reach 3× during placement season" },
-  { icon: "🎨", text: "Designed 200+ visual assets for events, campaigns, and branding" },
-  { icon: "👩‍💻", text: "Trained 15+ student volunteers in content creation and basic design" },
-  { icon: "🎪", text: "Coordinated 10+ college-wide events with unified visual identity" },
-  { icon: "🏗️", text: "Built reusable content systems adopted by multiple student bodies" },
-  { icon: "🧠", text: "AI model achieving 99.24% accuracy on medical image classification" },
-  { icon: "🏆", text: "Photography award winner — inter-school competition" },
+const milestones = [
+  { icon: "🎯", text: "99.24% accuracy on brain tumor classification model (PyTorch/CNN)" },
+  { icon: "", text: "5 NPTEL certification courses in AI/ML & Core CS" },
+  { icon: "🤝", text: "Hacktoberfest contributor — 4+ open-source repositories" },
+  { icon: "⚡", text: "10+ projects built with Next.js, React, Python, and ML frameworks" },
+  { icon: "", text: "Core CS expertise: DSA, DBMS, OS, Algorithms, Machine Learning" },
+  { icon: "👥", text: "Core team member & lead coordinator for college technical initiatives" },
+  { icon: "🌐", text: "Founded College Alumni Association — built mentorship & engagement systems" },
+  { icon: "🏆", text: "Award winner in photography & inter-college competitions" },
+  { icon: "🤖", text: "Advanced AI practitioner — leveraging AI & automation for development & productivity" }
 ];
 
 export default function Achievements() {
