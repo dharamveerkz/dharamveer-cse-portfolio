@@ -15,7 +15,6 @@ export default function Experience() {
             <div className="absolute -left-2 top-0 w-4 h-4 bg-white border-2 border-blue-400 rounded-full"></div>
             <h3 className="font-bold text-lg text-slate-900">{r.role}</h3>
             <p className="text-blue-600 font-semibold text-sm">{r.org}</p>
-            <p className="font-mono text-xs text-slate-500 mb-3">{r.date}</p>
             <ul className="list-none space-y-2">
               {r.bullets.map((b, j) => <li key={j} className="text-slate-600 text-sm pl-4 relative before:content-['▸'] before:absolute before:left-0 before:text-blue-600">{b}</li>)}
             </ul>
