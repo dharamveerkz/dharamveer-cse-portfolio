@@ -34,6 +34,12 @@ export default function Home() {
     }
   ];
 
+  const quickLinks = [
+    { name: "Skills", href: "/skills", icon: "⚡" },
+    { name: "Experience", href: "/experience", icon: "💼" },
+    { name: "Achievements", href: "/achievements", icon: "🏆" }
+  ];
+
   return (
     <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-blue-100 px-6">
       <div className="max-w-3xl text-center space-y-6">
@@ -41,8 +47,7 @@ export default function Home() {
           <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span> Open to Opportunities
         </div>
         
-        <h1 className="font-playfair text-5xl md:text-7xl font-black tracking-tight">
-          Dharamveer <span className="text-blue-600">Kumar</span>
+        <h1 className="font-playfair text-5xl md:text-7xl font-black tracking-tight">          Dharamveer <span className="text-blue-600">Kumar</span>
         </h1>
         
         <p className="text-lg md:text-xl text-slate-600 font-light">
@@ -86,6 +91,19 @@ export default function Home() {
           >
             Contact Me
           </Link>
+        </div>
+
+        {/* Quick Navigation Boxes */}
+        <div className="flex flex-wrap justify-center gap-3 pt-4">
+          {quickLinks.map((link) => (
+            <Link              key={link.name}
+              href={link.href}
+              className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-lg text-slate-700 text-sm font-medium hover:border-blue-300 hover:text-blue-600 hover:shadow-md transition-all duration-200"
+            >
+              <span>{link.icon}</span>
+              <span>{link.name}</span>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
