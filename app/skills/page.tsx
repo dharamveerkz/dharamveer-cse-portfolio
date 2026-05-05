@@ -1,5 +1,10 @@
 const categories = [
   {
+    icon: "🧩",
+    domain: "Core CSE",
+    tags: ["DSA", "Problem Solving", "OOPs", "DBMS", "OS", "Computer Networks"]
+  },
+  {
     icon: "🧠",
     domain: "Full Stack (Next.js)",
     tags: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Next.js APIs", "Server Actions", "REST APIs", "JWT Auth"]
@@ -22,7 +27,7 @@ const categories = [
   {
     icon: "🤖",
     domain: "AI / ML",
-    tags: ["Python", "TensorFlow", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
+    tags: ["LLMs", "PyTorch", "Torchvision", "TorchCAM", "NumPy", "Matplotlib", "Scikit-learn", "OpenCV", "Streamlit"]
   },
   {
     icon: "📸",
