@@ -17,7 +17,7 @@ export default function About() {
     "Data Analytics (SQL, Power BI)",
     "Backend Scaling (FastAPI, Microservices)",
     "DevOps (Docker, Deployment Pipelines)",
-    "AI Integration (LLMs, Automation)"
+    "AI Integration (LLMs, AI Tools, Automation)"
   ].map(s => (
     <span
       key={s}
