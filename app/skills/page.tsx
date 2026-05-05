@@ -1,11 +1,36 @@
 const categories = [
-  { icon: "🎨", domain: "Frontend", tags: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "Framer Motion", "Figma"] },
-  { icon: "⚙️", domain: "Backend", tags: ["Node.js", "Express", "Python", "Flask", "FastAPI", "REST APIs", "JWT Auth", "RBAC"] },
-  { icon: "🤖", domain: "AI / ML", tags: ["PyTorch", "TensorFlow", "Scikit-learn", "OpenCV", "Pandas", "NumPy", "Streamlit", "NLP", "CNN", "ResNet"] },
-  { icon: "📊", domain: "Data Analytics", tags: ["SQL", "PostgreSQL", "MongoDB", "Data Cleaning", "ETL Pipelines", "Matplotlib", "Seaborn"] },
-  { icon: "🗄️", domain: "Databases", tags: ["MySQL", "PostgreSQL", "MongoDB", "Prisma", "Supabase", "Firebase", "Redis"] },
-  { icon: "🚀", domain: "DevOps & Tools", tags: ["Git", "GitHub", "Vercel", "Netlify", "Postman", "VS Code", "Docker", "Linux CLI"] },
+  {
+    icon: "🧠",
+    domain: "Full Stack (Next.js)",
+    tags: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Next.js APIs", "Server Actions", "REST APIs", "JWT Auth"]
+  },
+  {
+    icon: "🗄️",
+    domain: "Database",
+    tags: ["MongoDB", "MySQL", "PostgreSQL", "Prisma"]
+  },
+  {
+    icon: "🚀",
+    domain: "Deployment & Tools",
+    tags: ["Git", "GitHub", "Vercel", "Netlify", "Postman", "VS Code"]
+  },
+  {
+    icon: "🎨",
+    domain: "Design & Visual",
+    tags: ["UI/UX Design", "Graphic Design", "Branding", "Visual Storytelling"]
+  },
+  {
+    icon: "🤖",
+    domain: "AI / ML",
+    tags: ["Python", "TensorFlow", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
+  },
+  {
+    icon: "📸",
+    domain: "Extracurricular",
+    tags: ["Photography", "Photo Editing", "Video Editing", "Social Media Strategy", "Content Creation"]
+  }
 ];
+
 
 export default function Skills() {
   return (
