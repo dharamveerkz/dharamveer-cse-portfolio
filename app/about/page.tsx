@@ -7,12 +7,26 @@ export default function About() {
       <p className="text-slate-600 mb-4 leading-relaxed">I build scalable applications using Next.js, React, TypeScript, and Python-based AI frameworks, focusing on clean architecture, performance, and user-centric solutions.</p>
       <p className="text-slate-600 mb-8 leading-relaxed">Currently seeking opportunities in Full-Stack Development, AI/ML Engineering, or Data Analytics to build impactful, data-driven solutions.</p>
       
-      <h3 className="font-mono text-xs font-bold text-blue-600 uppercase tracking-wide mb-3">Post-Grad Upskilling</h3>
-      <div className="flex flex-wrap gap-2 mb-6 font-mono text-xs font-medium">
-        {["Next.js 16", "Data Analyst", "Power Bi", "Docker", "PyTorch", "FastAPI", "Several Ai Tools"].map(s => (
-          <span key={s} className="px-3 py-1 bg-white border border-slate-200 rounded text-slate-700">{s}</span>
-        ))}
-      </div>
+      <h3 className="font-mono text-xs font-bold text-blue-600 uppercase tracking-wide mb-3">
+  Post-Grad Upskilling
+</h3>
+
+<div className="flex flex-wrap gap-2 mb-6 font-mono text-xs font-medium">
+  {[
+    "Next.js 16",
+    "Data Analytics (SQL, Power BI)",
+    "Backend Scaling (FastAPI, Microservices)",
+    "DevOps (Docker, Deployment Pipelines)",
+    "AI Integration (LLMs, Automation)"
+  ].map(s => (
+    <span
+      key={s}
+      className="px-3 py-1 bg-white border border-slate-200 rounded text-slate-700"
+    >
+      {s}
+    </span>
+  ))}
+</div>
       <div className="grid md:grid-cols-3 gap-4">
         {[
           { d: "🎓 B.Tech — Computer Science & Engineering", s: "Bakhtiyarpur College of Engineering, Patna", g: "CGPA: 7.66 / 10" },
